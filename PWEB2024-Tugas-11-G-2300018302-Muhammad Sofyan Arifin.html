@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form PHP</title>
+    <link rel="stylesheet" href="pweb.css">
+</head>
+<body>
+<div class="container">
+    <form method="POST" onsubmit="return formulir()" action="pweb.php">
+        <h4> FORM </h4>
+        <label for="Nama">Nama : </label><br>
+        <input type="text" name="Nama" id="Nama" placeholder="Masukkan nama Anda">
+        <br><br>
+        <label for="Tl">Tanggal lahir/Tahun : </label><br>
+        <input type="date" name="Tl" id="Tl">
+        <br><br>
+        <label for="Jk">Jenis Kelamin : </label><br>
+        <input type="radio" name="Jk" id="Jk"  value="Laki-laki">Laki-laki
+        <input type="radio" name="Jk" id="Jk" value="Perempuan">Perempuan<br>
+        <br><label for="alamat">Masukkan asal kota:</label><br>
+        <input type="text" name="alamat" id="alamat" placeholder="Masukkan asal kota Anda"><br><br>
+        <input type="submit" class="Submit" name="var4" value="Submit">
+        <input type="reset" class="Hapus" name="var5" value="Clear">
+    </form>
+</div>
+<script src="pweb.js"></script>
+</body>
+</html>
